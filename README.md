@@ -24,14 +24,13 @@
   - `DELETE /db/merchants/{id}`
 
 ## Cara Run (Mac/Linux)
+## Jika sudah ada venv nya maka tinggal langsung saja aktifkan
 ```bash
 python3 -m venv venv
 source venv/bin/activate 
 pip install -r requirements.txt
 uvicorn main:app --reload --port 8000
 ```
-
-## Jika sudah ada venv nya maka tinggal langsung saja aktifkan
 
 ## Cara Run (Windows)
 ```powershell
@@ -53,7 +52,7 @@ curl -X POST http://127.0.0.1:8000/db/merchants \
   -d '{"name":"Toko A","description":"pakai DB"}'
 
 # List
-curl http://127.0.0.1:8001/db/merchants
+curl http://127.0.0.1:8000/db/merchants
 
 # Update id=1
 curl -X PUT http://127.0.0.1:8000/db/merchants/1 \
